@@ -1,0 +1,4 @@
+Esta pasta receberá automaticamente os arquivos do banco SQL H2.
+Não coloque o banco em um repositório público (GitHub).
+Para reiniciar os dados de demonstração, PARE a aplicação, apague apenas
+os arquivos loja.mv.db (e loja.trace.db, se existir) e inicie novamente.

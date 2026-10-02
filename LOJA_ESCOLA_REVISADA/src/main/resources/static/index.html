@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loja Escola - modelo didático</title>
+  <!-- Etapa 1: mude o nome da loja e o título abaixo. -->
+  <link rel="stylesheet" href="/estilo.css">
+  <script src="/loja.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <div class="largura topo-conteudo">
+      <div>
+        <p class="etiqueta">PROJETO DE POO</p>
+        <h1>Loja Escola</h1>
+        <p>Um ponto de partida para o e-commerce do grupo.</p>
+      </div>
+      <nav aria-label="Navegação">
+        <a href="#produtos">Produtos</a>
+        <a href="#carrinho">Carrinho (<span id="contador">0</span>)</a>
+        <a href="#cadastro">Cadastro de teste</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="largura">
+    <section class="mensagem-inicial">
+      <h2>Bem-vindo à nossa loja!</h2>
+      <p>Os produtos abaixo vêm da API em Java e ficam guardados no banco SQL H2.</p>
+    </section>
+
+    <section id="produtos" class="secao">
+      <h2>Produtos</h2>
+      <p id="mensagem-api" class="aviso" role="status"></p>
+      <div id="lista-produtos" class="grade"></div>
+    </section>
+
+    <section id="carrinho" class="secao caixa">
+      <h2>Carrinho de demonstração</h2>
+      <p class="ajuda">Não gera pedidos, não reduz estoque e não processa pagamentos.</p>
+      <ul id="itens-carrinho"></ul>
+      <p id="total-carrinho" class="total">Total: R$ 0,00</p>
+      <button type="button" id="limpar-carrinho" class="botao-secundario">Limpar carrinho</button>
+    </section>
+
+    <section id="cadastro" class="secao caixa">
+      <h2>Laboratório: cadastrar produto</h2>
+      <p class="ajuda">Esta área é somente para testes locais. Não possui login ou proteção de administrador.</p>
+      <form id="form-produto">
+        <label for="nome">Nome do produto</label>
+        <input id="nome" type="text" required maxlength="80" placeholder="Ex.: Estojo colorido">
+        <label for="preco">Preço em reais</label>
+        <input id="preco" type="number" step="0.01" min="0.01" max="999999.99" required placeholder="19.90">
+        <label for="estoque">Quantidade em estoque</label>
+        <input id="estoque" type="number" step="1" min="0" max="10000" required placeholder="5">
+        <button type="submit" id="botao-cadastrar">Cadastrar produto</button>
+        <p id="mensagem-cadastro" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="rodape">Projeto escolar · Uso local · Sem compras e pagamentos reais</footer>
+</body>
+</html>

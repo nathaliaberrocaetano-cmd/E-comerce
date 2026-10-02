@@ -1,0 +1,36 @@
+/* PRIMEIRA MODIFICAÇÃO: escolha uma nova cor para a loja. */
+:root { --cor-principal: #b5121b; --cor-escura: #252525; --fundo: #f7f7fa; }
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: var(--fundo); color: var(--cor-escura); }
+.largura { width: min(1080px, 92%); margin: auto; }
+.topo { background: var(--cor-principal); color: white; padding: 24px 0; }
+.topo-conteudo { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; }
+.topo h1 { margin: 4px 0; font-size: 2.1rem; }
+.topo p { margin: 4px 0; }
+.etiqueta { font-size: .8rem; letter-spacing: .16em; font-weight: bold; }
+nav { display: flex; flex-wrap: wrap; gap: 10px; }
+nav a { color: white; font-weight: bold; text-decoration: none; border: 1px solid #ffffff85; padding: 10px; border-radius: 9px; }
+nav a:hover { background: #ffffff30; }
+.mensagem-inicial { margin: 24px 0; padding: 22px; background: white; border-left: 6px solid var(--cor-principal); border-radius: 9px; }
+.mensagem-inicial h2 { margin-top: 0; }
+.secao { margin: 28px 0; }
+h2 { margin-bottom: 8px; }
+.ajuda { color: #5c5c5c; margin-top: 0; }
+.grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.cartao, .caixa { padding: 20px; background: white; border: 1px solid #e3e3e3; border-radius: 12px; box-shadow: 0 2px 12px #0000000a; }
+.cartao h3 { margin: 6px 0 12px; }
+.simbolo { width: 45px; height: 45px; background: #ffe3e5; border-radius: 10px; display: grid; place-items: center; font-weight: bold; color: var(--cor-principal); }
+.preco { font-weight: bold; font-size: 1.2rem; }
+.estoque { color: #666; }
+button { border: 0; border-radius: 7px; color: white; background: var(--cor-principal); padding: 10px 14px; cursor: pointer; font-weight: bold; }
+button:hover { filter: brightness(.90); }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.botao-secundario { background: var(--cor-escura); }
+#itens-carrinho { padding-left: 20px; line-height: 1.7; }
+.total { font-size: 1.3rem; font-weight: bold; }
+form { display: grid; gap: 12px; max-width: 460px; }
+label { display: grid; gap: 5px; font-weight: bold; }
+input { border: 1px solid #aaa; border-radius: 6px; font-size: 1rem; padding: 9px; }
+.aviso, #mensagem-cadastro { min-height: 1.4em; color: #7a1d22; }
+.rodape { margin-top: 40px; padding: 23px; color: #555; text-align: center; }
