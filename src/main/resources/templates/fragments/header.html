@@ -1,0 +1,16 @@
+<header class="site-header" th:fragment="header">
+    <div class="header-inner">
+        <a class="brand" th:href="@{/}" aria-label="Maquiagem Store, página inicial">
+            <span class="brand-mark" aria-hidden="true">M</span>
+            <span>maquiagem <strong>store</strong></span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a th:href="@{/}">Início</a>
+            <a th:href="@{/produtos}">Produtos</a>
+            <a th:href="@{/cliente/perfil}">Minha conta</a>
+        </nav>
+        <a class="bag-link" th:href="@{/carrinho}" aria-label="Abrir carrinho">
+            <span aria-hidden="true">♡</span><span>Carrinho</span>
+        </a>
+    </div>
+</header>

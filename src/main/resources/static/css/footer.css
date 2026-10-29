@@ -1,0 +1,6 @@
+.site-footer { background: #f1eae6; }
+.footer-inner { display: grid; width: min(1120px, calc(100% - 80px)); grid-template-columns: 1fr 1fr auto; align-items: center; gap: 18px 30px; margin: auto; padding-block: 34px; }
+.brand-footer { grid-row: span 2; }
+.footer-inner > p { margin: 0; color: var(--muted); font-family: var(--serif); font-size: 15px; font-style: italic; }
+.footer-links { display: flex; gap: 22px; font-size: 11px; }
+.footer-inner small { color: var(--muted); font-size: 10px; text-align: right; }

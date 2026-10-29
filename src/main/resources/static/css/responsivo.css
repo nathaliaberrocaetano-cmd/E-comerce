@@ -1,0 +1,49 @@
+@media (max-width: 760px) {
+    .section-wrap, .promotion-inner, .placeholder-page { width: min(100% - 40px, 560px); }
+    .header-inner { width: calc(100% - 36px); height: 68px; }
+    .brand { font-size: 13px; }
+    .main-nav { gap: 14px; }
+    .main-nav a { font-size: 10px; }
+    .bag-link span:last-child { display: none; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-copy { justify-self: start; width: 100%; padding: 62px 28px 52px; }
+    .hero-copy h1 { font-size: 58px; }
+    .hero-art { min-height: 390px; }
+    .hero-shape-one { top: 38px; left: 8%; width: 300px; height: 350px; }
+    .hero-shape-two { top: 70px; left: 33%; width: 200px; height: 270px; }
+    .hero-product { top: 54px; left: 42%; height: 245px; }
+    .hero-note { bottom: 22px; }
+    .hero-index { top: 24px; bottom: auto; left: auto; right: 20px; }
+    .intro { grid-template-columns: 1fr; row-gap: 20px; padding-block: 76px; }
+    .intro .eyebrow { grid-column: auto; }
+    .intro h2 { font-size: 46px; }
+    .intro-copy { max-width: 430px; }
+    .categories { padding-block: 35px 76px; }
+    .section-heading { align-items: start; }
+    .section-heading h2 { font-size: 30px; }
+    .section-heading > .text-link { margin-top: 30px; white-space: nowrap; }
+    .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 16px; }
+    .product-art { height: 230px; }
+    .product-art i { height: 155px; }
+    .featured { padding-bottom: 76px; }
+    .promotion-inner { padding-block: 68px; }
+    .promotion h2 { font-size: 45px; }
+    .promotion-mark { right: -6%; bottom: -70px; font-size: 270px; }
+    .footer-inner { width: calc(100% - 40px); grid-template-columns: 1fr auto; }
+    .brand-footer { grid-row: auto; }
+    .footer-inner > p { grid-column: 1 / -1; }
+    .footer-links { grid-column: 1; }
+    .footer-inner small { grid-column: 2; grid-row: 3; }
+}
+
+@media (max-width: 420px) {
+    .main-nav { gap: 10px; }
+    .main-nav a { font-size: 9px; }
+    .brand { gap: 6px; font-size: 12px; }
+    .brand-mark { width: 26px; }
+    .hero-copy h1 { font-size: 50px; }
+    .section-heading { display: block; }
+    .section-heading > .text-link { margin-top: 16px; }
+    .product-grid { grid-template-columns: 1fr; }
+    .product-art { height: 270px; }
+}

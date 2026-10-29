@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Maquiagem Store: beleza, cor e cuidado para todos os dias.">
+    <title>Maquiagem Store | Beleza no seu tom</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/header.css}">
+    <link rel="stylesheet" th:href="@{/css/footer.css}">
+    <link rel="stylesheet" th:href="@{/css/produtos.css}">
+    <link rel="stylesheet" th:href="@{/css/responsivo.css}">
+</head>
+<body>
+<div th:replace="~{fragments/header :: header}"></div>
+<main>
+    <section class="hero">
+        <div class="hero-copy">
+            <p class="eyebrow">BELEZA, NO SEU TEMPO</p>
+            <h1>O seu jeito de <em>brilhar.</em></h1>
+            <p>Texturas que encantam, cores que contam histórias e pequenos rituais só seus.</p>
+            <a class="button button-dark" th:href="@{/produtos}">Explorar produtos <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-art" role="img" aria-label="Composição abstrata em tons de rosa e nude">
+            <div class="hero-shape hero-shape-one"></div>
+            <div class="hero-shape hero-shape-two"></div>
+            <div class="hero-product"><span>COLOR<br>YOUR<br>WORLD</span><i></i></div>
+            <p class="hero-note">um toque de cor,<br>um mundo de possibilidades</p>
+        </div>
+        <span class="hero-index">01 / BELEZA SEM PRESSA</span>
+    </section>
+
+    <section class="intro section-wrap">
+        <p class="eyebrow">UM ESPAÇO PARA VOCÊ</p>
+        <h2>Encontre beleza<br>nos <em>detalhes.</em></h2>
+        <p class="intro-copy">Uma curadoria de maquiagem e cuidado pensada para acompanhar cada versão de você, todos os dias.</p>
+    </section>
+
+    <section class="categories section-wrap" aria-labelledby="categories-title">
+        <div class="section-heading">
+            <div><p class="eyebrow">EXPLORE POR CATEGORIA</p><h2 id="categories-title">O que combina com você</h2></div>
+            <a class="text-link" th:href="@{/produtos}">Ver tudo <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="category-list">
+            <a class="category-item" th:href="@{/produtos}"><span class="category-number">01</span><span>Boca</span><span aria-hidden="true">↗</span></a>
+            <a class="category-item" th:href="@{/produtos}"><span class="category-number">02</span><span>Pele</span><span aria-hidden="true">↗</span></a>
+            <a class="category-item" th:href="@{/produtos}"><span class="category-number">03</span><span>Olhos</span><span aria-hidden="true">↗</span></a>
+            <a class="category-item" th:href="@{/produtos}"><span class="category-number">04</span><span>Skincare</span><span aria-hidden="true">↗</span></a>
+        </div>
+    </section>
+
+    <section class="featured section-wrap" aria-labelledby="featured-title">
+        <div class="section-heading">
+            <div><p class="eyebrow">ESCOLHAS DA LOJA</p><h2 id="featured-title">Em destaque</h2></div>
+            <a class="text-link" th:href="@{/produtos}">Conhecer produtos <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="product-grid">
+            <article class="product-card"><div class="product-art product-art-rose"><span>01</span><i></i></div><p class="product-brand">MAQUIAGEM STORE</p><h3>Novidades da coleção</h3><a th:href="@{/produtos}">Ver detalhes <span aria-hidden="true">↗</span></a></article>
+            <article class="product-card"><div class="product-art product-art-sand"><span>02</span><i></i></div><p class="product-brand">MAQUIAGEM STORE</p><h3>Favoritos para a pele</h3><a th:href="@{/produtos}">Ver detalhes <span aria-hidden="true">↗</span></a></article>
+            <article class="product-card"><div class="product-art product-art-plum"><span>03</span><i></i></div><p class="product-brand">MAQUIAGEM STORE</p><h3>Cor em todas as formas</h3><a th:href="@{/produtos}">Ver detalhes <span aria-hidden="true">↗</span></a></article>
+        </div>
+    </section>
+
+    <section class="promotion">
+        <div class="promotion-inner"><p class="eyebrow">UM CONVITE PARA SE CUIDAR</p><h2>Seu próximo ritual<br>começa <em>aqui.</em></h2><a class="button button-light" th:href="@{/produtos}">Descobrir a seleção <span aria-hidden="true">↗</span></a></div>
+        <div class="promotion-mark" aria-hidden="true">M.</div>
+    </section>
+</main>
+<div th:replace="~{fragments/footer :: footer}"></div>
+</body>
+</html>
